@@ -1,3 +1,16 @@
+@keyframes slider {
+    0% { left: 0;}
+    10% { left: 0;}
+    20% { left: 0;}
+    30% { left: -100%;}
+    40% { left: -100%;}
+    50% { left: -200%;}
+    70% { left: -200%;}
+    80% { left: -300%;}
+    90% { left: -300%;}
+    100% { left: -400%;}
+
+}
 
 
 
@@ -5,12 +18,11 @@
 
 
 
-
-.slider-frame{
+.slides{
     overflow: hidden;
 }
 
-.slider-frame figure {
+.slides figure {
     position: relative ;
     width: 500%;
     margin: 0;
@@ -18,6 +30,7 @@
     animation: 20s slider infinite;
 }
 
-.slider-frame figure img{
-    
+.slides figure img{
+    float: left;
+    width: 20%;
 }
